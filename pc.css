@@ -1,0 +1,187 @@
+@media  all {  
+    *{padding: 0;margin: 0;}
+
+
+
+
+    /* navbar */
+    header{  
+    width: 100%;
+    background-color: green;
+    height: 100px;
+    
+    }
+    
+    #logobox {   
+    left:100%;
+    width:30%;
+    height:100%;
+    float:right;
+    }
+    
+    
+    
+    #nav {
+    text-align: left;
+    width: 70%;
+    }
+    
+    #logo {  
+        width: 31%;
+        float: right;
+        height: 100%;
+    }
+    
+    #nav a {  
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size:20px;
+    }
+    
+    #nav li {   
+    display: inline-block;
+    line-height:100px;
+    width: 33%;
+    background-color: black;
+    text-align: center;
+    }
+    
+    
+    #nav a:hover {  
+    background-color: white;
+    color:black;
+    width: 100%;
+    height:100%;
+    }
+    
+    /* navbar */
+    
+    
+    /* main */
+    
+    #main {   
+    
+    width: 70%;
+    height: 440px;
+    background-color:green;
+    float:right;
+    border-top: 2px solid black;
+    animation-name: changebackround ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    
+    
+    }
+    
+    @keyframes changebackround {  
+    
+    
+        0% {  
+    background-color:white; 
+    
+          }
+         50% {  
+    
+    background-color:green;
+    
+         } 
+        
+         100% { 
+    
+    background-color:black;
+    
+         }
+    }
+    
+    
+    /* main */
+    
+    /* aside  */
+    #aside { 
+        text-align:center;
+    
+    width: 30%;
+    
+    
+    }
+    
+    
+    #sm { display : flex;
+          border-top: 2px solid black;  
+          border-bottom: 2px solid black;   
+    
+    }
+            
+    #sm a {  
+            height:50px;
+            width:20%;
+            margin-left: 10px;
+    }
+    
+    #sm img {height: 50px;
+        width: 80%;
+    }
+    
+    
+    #sm img:hover {
+    
+    height: 70px;width:100px;position: relative;
+    
+    }
+    
+    /* aside  */
+    
+    
+    /*article*/ 
+    
+    #article { 
+        position:relative;
+        bottom: -50px; ;
+        text-align: center;clear: both;
+        
+        
+        display : inline-block;}
+    #article img { 
+        max-width: 28%;
+        margin: 10px;
+        height:40% ;
+        width: 30%;
+        margin: 34px;
+    
+    
+    }
+    
+    #article a {margin-left: 10px;
+} 
+
+}
+
+@media print {   
+
+embed {display:none;}
+
+#nav li { width:20%;}
+
+}
+
+@media screen {
+    
+}
+
+@media screen and (max-width:1140px) and (min-width:0px)  { 
+    #logobox {  width:31%;height:50%;text-align: center;float: inherit; }
+   #nav li { width: unset;height:50%;bottom:100%;}
+  header { height: 190px;}
+  #logo {  
+    width: 100%;
+    float: right;
+    height: 50%;
+  }
+#nav {  text-align: end;}
+#main { display: none;}
+#aside {  width: 100%;}
+#article { width: 430px;}
+
+}
